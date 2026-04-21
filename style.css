@@ -98,7 +98,7 @@ nav ul a:hover { color: var(--navy); }
   transition: color 0.2s;
 }
 
-.hero .links a:hover { color: #fff; }
+.hero .links a:hover { color: var(--navy); }
 
 /* MAIN LAYOUT */
 main {
@@ -127,17 +127,19 @@ h2 {
 /* ABOUT */
 .about-layout {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: flex-start;
 }
 
 .about-photo {
-  width: 160px;
-  height: 160px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
-  border: 3px solid var(--border);
+  border: 2px solid var(--border);
+  float: right;
+  margin: 0 0 0.5rem 1.5rem;
 }
 
 .about-text p {
@@ -147,6 +149,7 @@ h2 {
 
 @media (max-width: 600px) {
   .about-layout { flex-direction: column; align-items: center; }
+  .about-photo { float: none; margin: 0 auto 1rem; }
 }
 
 /* INTERESTS */
