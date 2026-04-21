@@ -135,11 +135,12 @@ h2 {
   width: 130px;
   height: auto;
   border-radius: 4px;
-  object-fit: cover;
+  object-fit: contain;
   flex-shrink: 0;
   border: 1px solid var(--border);
   float: right;
   margin: 0.3rem 0 0.8rem 1.5rem;
+  display: block;
 }
 
 .about-text p {
