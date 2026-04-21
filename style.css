@@ -1,10 +1,10 @@
 :root {
-  --navy: #1a2e4a;
-  --teal: #2a7f7f;
-  --light-teal: #e8f4f4;
+  --navy: #2c3e50;
+  --teal: #3a7d7d;
+  --light-teal: #eef4f4;
   --text: #2d2d2d;
-  --muted: #666;
-  --border: #dde4e4;
+  --muted: #777;
+  --border: #e4e8e8;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -19,7 +19,8 @@ body {
 
 /* NAV */
 nav {
-  background: var(--navy);
+  background: #fff;
+  border-bottom: 1px solid var(--border);
   padding: 0 2rem;
   position: sticky;
   top: 0;
@@ -31,7 +32,7 @@ nav {
 }
 
 nav .name {
-  color: #fff;
+  color: var(--navy);
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.03em;
@@ -45,35 +46,37 @@ nav ul {
 }
 
 nav ul a {
-  color: #ccd8e8;
+  color: var(--muted);
   text-decoration: none;
   font-family: 'Arial', sans-serif;
-  font-size: 0.88rem;
+  font-size: 0.85rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   transition: color 0.2s;
 }
 
-nav ul a:hover { color: #fff; }
+nav ul a:hover { color: var(--navy); }
 
 /* HERO */
 .hero {
-  background: linear-gradient(135deg, var(--navy) 0%, #2a4a6a 100%);
-  color: #fff;
-  padding: 4rem 2rem 3.5rem;
+  background: #f7f9f9;
+  border-bottom: 1px solid var(--border);
+  color: var(--navy);
+  padding: 3.5rem 2rem 3rem;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.4rem;
-  letter-spacing: 0.02em;
+  font-size: 2.2rem;
+  letter-spacing: 0.01em;
   margin-bottom: 0.4rem;
+  color: var(--navy);
 }
 
 .hero .title {
   font-family: 'Arial', sans-serif;
-  font-size: 1rem;
-  color: #a8c4d8;
+  font-size: 0.92rem;
+  color: var(--muted);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 1.2rem;
@@ -89,9 +92,9 @@ nav ul a:hover { color: #fff; }
 }
 
 .hero .links a {
-  color: #c8dff0;
+  color: var(--teal);
   text-decoration: none;
-  border-bottom: 1px solid rgba(200, 223, 240, 0.4);
+  border-bottom: 1px solid var(--border);
   transition: color 0.2s;
 }
 
@@ -122,9 +125,28 @@ h2 {
 }
 
 /* ABOUT */
+.about-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.about-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid var(--border);
+}
+
 .about-text p {
   margin-bottom: 0.9rem;
   font-size: 1.02rem;
+}
+
+@media (max-width: 600px) {
+  .about-layout { flex-direction: column; align-items: center; }
 }
 
 /* INTERESTS */
