@@ -187,7 +187,7 @@ h2 {
 }
 
 /* PUBLICATIONS */
-.me { text-decoration: underline; text-underline-offset: 2px; }
+.me { font-weight: 600; color: #475569; }
 
 .pub-list {
   list-style: none;
