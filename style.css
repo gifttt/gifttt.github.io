@@ -187,6 +187,8 @@ h2 {
 }
 
 /* PUBLICATIONS */
+.me { text-decoration: underline; text-underline-offset: 2px; }
+
 .pub-list {
   list-style: none;
 }
