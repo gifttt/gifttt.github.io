@@ -219,6 +219,8 @@ h2 {
   border-bottom: 1px solid var(--border);
 }
 
+.brief-th { font-size: 1.1rem; line-height: 1.7; }
+
 .pub-list a:hover { color: var(--navy); }
 
 .pub-year {
