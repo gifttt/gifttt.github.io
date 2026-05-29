@@ -202,12 +202,13 @@ h2 {
 .pub-list li:last-child { border-bottom: none; }
 
 .pub-list .pub-title {
-  font-style: italic;
+  font-style: normal;
 }
 
 .pub-list .pub-journal {
   color: var(--teal);
   font-weight: bold;
+  font-style: italic;
 }
 
 .pub-list a {
