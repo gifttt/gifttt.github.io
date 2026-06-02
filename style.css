@@ -223,6 +223,14 @@ h2 {
 
 .pub-list a:hover { color: var(--navy); }
 
+.slide-link {
+  color: #C1603A;
+  text-decoration: none;
+  border-bottom: 1px solid #e8c9bc;
+}
+
+.slide-link:hover { color: var(--navy); }
+
 .pub-blurb {
   margin-top: 0.5rem;
   font-size: 0.92rem;
