@@ -223,6 +223,13 @@ h2 {
 
 .pub-list a:hover { color: var(--navy); }
 
+.pub-blurb {
+  margin-top: 0.5rem;
+  font-size: 0.92rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
 .pub-year {
   font-family: 'Arial', sans-serif;
   font-size: 0.8rem;
