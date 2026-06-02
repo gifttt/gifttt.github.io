@@ -125,6 +125,14 @@ h2 {
 }
 
 /* ABOUT */
+.about-link {
+  color: #C1603A;
+  text-decoration: none;
+  border-bottom: 1px solid #e8c9bc;
+}
+
+.about-link:hover { color: var(--navy); }
+
 .about-layout {
   display: flex;
   gap: 1.5rem;
